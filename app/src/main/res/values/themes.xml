@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StudentManagement" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--        <item name="colorPrimary">@color/my_light_primary</item>-->
+<!--      -->
+<!--        <item name="colorSecondary">@color/my_light_secondary</item>-->
+<!--        <item name="textColorPrimary">@color/my_light_text_primary</item>-->
+<!--        <item name="textColorSecondary">@color/my_light_text_secondary</item>-->
+<!--        <item name="buttonBackground">@drawable/my_button_background</item>-->
+<!--        <item name="buttonTextColor">@color/my_button_text_color</item>-->
+<!--        <item name="fontFamily">@font/my_custom_font_family</item>-->
+    </style>
+
+    <style name="Theme.StudentManagement" parent="Base.Theme.StudentManagement" />
+</resources>

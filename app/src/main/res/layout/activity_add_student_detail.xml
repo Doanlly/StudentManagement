@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddStudentDetailActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm học sinh"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap ten"
+            android:id="@+id/edt_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight= "15dp"
+            android:layout_marginLeft="15dp"
+            android:imeOptions="actionDone"
+                android:inputType="textCapCharacters"/>
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/age"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginLeft="15dp"-->
+            <!--        android:layout_marginTop="15dp"-->
+            <!--        android:layout_marginRight="15dp"-->
+            <!--        android:hint="Nhap ngay sinh" />-->
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinneryear"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbarSize="16dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhap MSV"
+                android:id="@+id/enter_msv"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight= "15dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gioi tinh: "
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gender_radiobtn"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nam"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/male_radiobtn"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nu"
+                        android:textSize="16dp"
+                        android:id="@+id/female_radiobrn"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhap SDT"
+                android:id="@+id/enter_phone"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight= "15dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhap Dia chi"
+                android:id="@+id/enter_address"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight= "15dp"
+                android:layout_marginLeft="15dp"
+
+                />
+            <TextView
+                android:id="@+id/ketquahoctap_addview"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:text="Kết quả học tập"
+                android:textColor="#1D1E53"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ketquahoctap"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="15dp"
+                android:id="@+id/llly_viewaddstd_kqht"
+                android:weightSum="9"
+                >
+                <TextView
+                    android:id="@+id/diemtb_viewaddstd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HKI: "
+                    android:textColor="#1D1E53"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/txt_diemtbviewaddstd_viewaddstd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="7.5"
+                    android:textColor="#970220"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/diemtb2_viewaddstd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HKII: "
+                    android:textColor="#1D1E53"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/txt_diemtb2_viewaddstd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="7.5"
+                    android:textColor="#970220"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/diemtk_viewaddstd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TK: "
+                    android:layout_marginRight="20dp"
+                    android:textColor="#1D1E53"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/txt_diemtk3_viewaddstd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="7.5"
+                    android:textColor="#970220"
+                    android:textSize="18dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/thongtinkhac_viewaddstd"
+                android:text="Thông tin khác"
+                android:textColor="#1D1E53"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhap thong tin khac"
+
+                android:layout_marginRight= "15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/differentinfomation_addviewstd"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhap SDT phu huynh"
+                android:inputType="number"
+                android:layout_marginRight= "15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/phoneparent_addviewstd"
+                />
+            <Button
+                android:id="@+id/btn_Add"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_button_sua"
+                android:text="Thêm"
+                android:layout_gravity="end"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btnViewHome"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_button_sua"
+                android:text="Trang chinh"
+                android:layout_gravity="end"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
